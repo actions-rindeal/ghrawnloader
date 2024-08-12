@@ -1,0 +1,35 @@
+name: 'GitHub Raw Downloader'
+description: 'Download files from GitHub raw URLs with style 🚀'
+inputs:
+  'github-token':
+    description: 'GitHub token for accessing private repositories'
+    required: false
+    default: '${{ github.token }}'
+  'repo':
+    description: 'Repository to download from (org/repo)'
+    required: false
+    default: '${{ github.repository }}'
+  'ref':
+    description: 'Git reference (branch, tag, or commit SHA)'
+    required: false
+    default: 'master'
+  'pre':
+    description: 'Whether to run in pre action phase'
+    required: false
+    default: 'false'
+  'files':
+    description: 'Files to download (multi-line string)'
+    required: true
+  'output-directory':
+    description: 'Directory to store downloaded files'
+    required: false
+    default: '.'
+
+outputs:
+  'metadata':
+    description: 'JSON string containing metadata for all downloaded files'
+
+runs:
+  using: 'node20'
+  main: 'dist/main.js'
+  pre: 'dist/main.js'
