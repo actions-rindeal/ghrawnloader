@@ -1,5 +1,6 @@
 # 🚀 GitHub Raw Downloader Action
 
+![Alpha](https://img.shields.io/badge/status-alpha-blue)
 [![GitHub license](https://img.shields.io/github/license/actions-rindeal/ghrawnloader)](https://github.com/actions-rindeal/ghrawnloader/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/actions-rindeal/ghrawnloader)](https://github.com/actions-rindeal/ghrawnloader/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/actions-rindeal/ghrawnloader)](https://github.com/actions-rindeal/ghrawnloader/issues)
